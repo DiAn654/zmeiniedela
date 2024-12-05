@@ -50,3 +50,10 @@ for el in text:
         else:
             d[el]=1
 print (d)
+
+4.4
+text = input("Введите слово или фразу: ").lower()
+vowels = "аеёиоуыэюя"  # Гласные буквы (как строчные, так и заглавные)
+for vowel in vowels:  # Проходим по каждой гласной
+    text = text.replace(vowel, "")  # Заменяем гласную на пустую строку
+print (text)
