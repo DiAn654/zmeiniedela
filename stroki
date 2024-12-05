@@ -39,3 +39,14 @@ print(f"Количество гласных: {counts['гласные']}")
 print(f"Количество согласных: {counts['согласные']}")
 print(f"Количество цифр: {counts['цифры']}")
 
+4.3
+d={}
+text=input()
+for el in text:
+    el=el.lower()
+    if el.isalpha():
+        if el in d:
+            d[el]+=1
+        else:
+            d[el]=1
+print (d)
