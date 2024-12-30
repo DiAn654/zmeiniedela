@@ -1,0 +1,17 @@
+#6.1
+from tkinter import *
+root = Tk()
+root.title("Nice airplane")
+canvas = Canvas(root, width=370, height=490, bg="#b3b3b3")
+canvas.pack()
+canvas.create_polygon(185, 450, 270, 430, 185, 320, fill="#c2c0c0",outline="Black", width=0.5)
+canvas.create_polygon(185, 320, 270, 210, 185, 80, fill="#c2c0c0",outline="Black", width=0.5)
+canvas.create_polygon(185, 450, 100, 323, 185, 203, fill="white",outline="Black", width=0.5)
+canvas.create_polygon(185, 203, 100, 88, 185, 80, fill="white",outline="Black", width=0.5)
+canvas.create_polygon(185, 80, 270, 88, 228, 145, fill="black",outline="Black", width=0.5)
+canvas.create_polygon(140, 143, 185, 203, 100, 205, fill="#191a1a",outline="Black", width=0.5)
+canvas.create_polygon(138, 270, 185, 203, 100, 205, fill="#282929",outline="Black", width=0.5)
+canvas.create_polygon(228, 265, 185, 320, 270, 318, fill="#191a1a",outline="Black", width=0.5)
+canvas.create_polygon(225, 373, 185, 320, 270, 318, fill="#282929",outline="Black", width=0.5)
+canvas.create_polygon(185, 450, 100, 435, 138, 380, fill="#191a1a",outline="Black", width=0.5)
+root.mainloop()
